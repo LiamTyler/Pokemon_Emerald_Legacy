@@ -613,5 +613,6 @@ Note that this is not necessary for a non-modern build since those are built wit
 # Useful additional tools
 
 * [porymap](https://github.com/huderlem/porymap) for viewing and editing maps
+    * NOTE! You'll need Porymap 5.x, not 6.x, since Emerald Legacy forked from pret-pokeemerald before PoryMap updated to version 6.x and introduced [breaking changes](https://huderlem.github.io/porymap/manual/breaking-changes.html) with older codebase.
 * [poryscript](https://github.com/huderlem/poryscript) for scripting ([VS Code extension](https://marketplace.visualstudio.com/items?itemName=karathan.poryscript))
 * [Tilemap Studio](https://github.com/Rangi42/tilemap-studio) for viewing and editing tilemaps
