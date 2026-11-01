@@ -8,6 +8,7 @@
 #include "party_menu.h"
 #include "sprite.h"
 #include "constants/field_effects.h"
+#include "liam_custom.h"
 
 // static functions
 static void FieldCallback_Dig(void);
@@ -54,6 +55,10 @@ static void StartDigFieldEffect(void)
     if (ShouldDoBrailleDigEffect())
     {
         DoBrailleDigEffect();
+    }
+    else if (Liam_ShouldDigToLab())
+    {
+        Liam_PerformDig();
     }
     else
     {

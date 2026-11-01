@@ -1,0 +1,13 @@
+mapscripts Liam_DigLab_MapScripts {
+}
+
+script Liam_DigLab_WarpOut {
+    warp(MAP_ROUTE106, 48, 17)
+    waitstate
+}
+
+script Liam_DigLab_Sign1 {
+    lockall
+    msgbox("Hello Bwee")
+    releaseall
+}

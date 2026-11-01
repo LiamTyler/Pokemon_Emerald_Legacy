@@ -1274,8 +1274,8 @@
 #define FLAG_HIDE_SLATEPORT_CITY_INCENSE_WOMAN                      0x4CE
 #define FLAG_CAUGHT_UNOWN_A                                         0x4CF
 #define FLAG_SHOW_HIDDEN_POWER                                      0x4D0
-#define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
-#define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
+#define FLAG_HIDE_TRUCK_MEW                                         0x4D1 // Previously Unused Flag
+#define FLAG_TRUCK_MEW_INITIALIZED                                  0x4D2 // Previously Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
 #define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
 #define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag

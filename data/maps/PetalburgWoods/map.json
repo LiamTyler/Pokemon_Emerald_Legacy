@@ -226,6 +226,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE104",
       "dest_warp_id": "7"
+    },
+    {
+      "x": 46,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_THE_END",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 47,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_THE_END",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

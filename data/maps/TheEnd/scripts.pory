@@ -1,0 +1,138 @@
+mapscripts TheEnd_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if (!flag(FLAG_TRUCK_MEW_INITIALIZED)) {
+            setflag(FLAG_HIDE_TRUCK_MEW)
+            setflag(FLAG_TRUCK_MEW_INITIALIZED)
+        }
+    }
+}
+
+const MEW_LOCAL_ID = 2
+
+script TheEnd_EventScript_Truck {
+    lockall
+    msgbox("It's a large moving truck.\nWould you like to shake it?", MSGBOX_YESNO)
+    closemessage
+    if (var(VAR_RESULT) != YES) {
+        releaseall
+        return
+    }
+
+    setvar(VAR_0x8004, 1)
+    callnative(ShakeTruck)
+    delay(30)
+
+    msgbox("Mmmmmm...", MSGBOX_DEFAULT)
+    //closemessage
+    //delay(60)
+    msgbox("......\pShake it again?", MSGBOX_YESNO)
+    closemessage
+    if (var(VAR_RESULT) != YES) {
+        releaseall
+        return
+    }
+    
+    setvar(VAR_0x8004, 1)
+    callnative(ShakeTruck)
+    delay(30)
+
+    msgbox("Bleugh... Who's there...", MSGBOX_DEFAULT)
+    //delay(60)
+    msgbox("......\pShake it one last time?", MSGBOX_YESNO)
+    closemessage
+    if (var(VAR_RESULT) != YES) {
+        releaseall
+        return
+    }
+
+    setvar(VAR_0x8004, 1)
+    callnative(ShakeTruck)
+    delay(30)
+
+    msgbox("I'm up, I'm up, who's banging around out\nthere!?", MSGBOX_DEFAULT)
+    closemessage
+
+    fadescreen(FADE_TO_WHITE)
+    delay(20)
+    // Mew appears.
+    clearflag(FLAG_HIDE_TRUCK_MEW)
+    addobject(MEW_LOCAL_ID)
+
+    fadescreen(FADE_FROM_WHITE)
+
+    delay(15)
+
+    // Exclamation mark above Mew.
+    playse(SE_PIN)
+    applymovement(MEW_LOCAL_ID, moves(
+        emote_exclamation_mark
+    ))
+    waitmovement(MEW_LOCAL_ID)
+
+    delay(90)
+
+    getplayerxy(VAR_0x8000, VAR_0x8001)
+    setvar(VAR_0x8001, 9)
+    subvar(VAR_0x8001, VAR_0x8000)
+    copyvar(VAR_0x8000, VAR_0x8001)
+
+    // Mew walks toward the player.
+    applymovement(MEW_LOCAL_ID, moves(
+        walk_down
+        walk_down
+    ))
+    waitmovement(MEW_LOCAL_ID)
+    while (var(VAR_0x8000) > 0) {
+        applymovement(MEW_LOCAL_ID, moves(walk_left))
+        waitmovement(MEW_LOCAL_ID)
+        subvar(VAR_0x8000, 1)
+    }
+
+    // Player turns toward Mew.
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(
+        face_right
+    ))
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    msgbox(
+"MEW: Hi Morgan! It's so good to see you!
+I was just taking a quick nap in my
+favorite spot, under this truck!
+
+It used to be in Vermilion City years
+ago, but some weird humans with 'R'
+shirts kept trying to track me down
+and wouldn't leave me alone!
+
+I kept teleporting it all across the
+world to dodge them, and found this new
+spot that I really like!
+
+So what's up?? Do you need help with
+something, or do you want to play??
+
+......
+
+Oh man! This Team Catalyst sounds
+terrible! I'm so glad you've found two
+of the eggs already. Let me help you
+find the last one! I should be able to
+use my psychic powers to get a sense of
+where it is...
+
+It's buried somewhere near
+water... Somewhere quite pretty...
+I'm getting the impression this place
+has a lot of love and meaning to it. And
+a place where something special truly
+began...
+
+Hmmm, looks like that's all I got. I hope
+that helps you Morgan. It was so good
+to see you again! Good luck with the
+last egg-- I know you can do it!
+Come back play with me sometime!"
+    MSGBOX_DEFAULT)
+
+    releaseall
+}
