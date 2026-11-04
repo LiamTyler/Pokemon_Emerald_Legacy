@@ -261,6 +261,7 @@
 #define OBJ_EVENT_GFX_JOLTEON                    257
 #define OBJ_EVENT_GFX_UMBREON                    258
 #define OBJ_EVENT_GFX_ESPEON                     259
+#define OBJ_EVENT_GFX_MEW_TRUCK                  260
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

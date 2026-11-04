@@ -470,6 +470,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_MOLTRES                 0x112C
 #define OBJ_EVENT_PAL_TAG_ZINNIA                  0x112D
 #define OBJ_EVENT_PAL_TAG_WHISMUR                 0x112E
+#define OBJ_EVENT_PAL_TAG_MEW_TRUCK               0x112F
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -527,6 +528,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Moltres,               OBJ_EVENT_PAL_TAG_MOLTRES},
     {gObjectEventPal_Zinnia,                OBJ_EVENT_PAL_TAG_ZINNIA},
     {gObjectEventPal_Whismur,               OBJ_EVENT_PAL_TAG_WHISMUR},
+    {gObjectEventPal_MewTruck,              OBJ_EVENT_PAL_TAG_MEW_TRUCK},
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 };
 
@@ -570,6 +572,13 @@ static const u16 sReflectionPaletteTags_Truck[] = {
     OBJ_EVENT_PAL_TAG_TRUCK,
     OBJ_EVENT_PAL_TAG_TRUCK,
     OBJ_EVENT_PAL_TAG_TRUCK,
+};
+
+static const u16 sReflectionPaletteTags_MewTruck[] = {
+    OBJ_EVENT_PAL_TAG_MEW_TRUCK,
+    OBJ_EVENT_PAL_TAG_MEW_TRUCK,
+    OBJ_EVENT_PAL_TAG_MEW_TRUCK,
+    OBJ_EVENT_PAL_TAG_MEW_TRUCK,
 };
 
 static const u16 sReflectionPaletteTags_VigorothMover[] = {
@@ -649,6 +658,7 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_NPC_3,            sReflectionPaletteTags_Npc3},
     {OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW, sReflectionPaletteTags_SubmarineShadow},
     {OBJ_EVENT_PAL_TAG_RED_LEAF,         sReflectionPaletteTags_RedLeaf},
+    {OBJ_EVENT_PAL_TAG_MEW_TRUCK,        sReflectionPaletteTags_MewTruck},
     {OBJ_EVENT_PAL_TAG_NONE,             NULL},
 };
 

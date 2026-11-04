@@ -2466,3 +2466,8 @@ static const struct SpriteFrameImage sPicTable_Espeon[] = {
     overworld_frame(gObjectEventPic_Espeon, 2, 2, 2),
     overworld_frame(gObjectEventPic_Espeon, 2, 2, 2),
 };
+
+static const struct SpriteFrameImage sPicTable_MewTruck[] = {
+    //overworld_frame(gObjectEventPic_MewTruck, 2, 2, 0),
+    obj_frame_tiles(gObjectEventPic_MewTruck),
+};
