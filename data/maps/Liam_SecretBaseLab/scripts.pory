@@ -1,0 +1,69 @@
+mapscripts Liam_SecretBaseLab_MapScripts {
+}
+
+script Liam_SecretBaseLab_Computer1 {
+    lockall
+    msgbox(
+"Outpost 2, Log 73:
+Analysis is still ongoing for Mew's
+psychic signature. Estimates suggest
+we are closer to his location here
+than the Sootopolis lab, but still not
+terribly close yet. More analysis to do."
+    )
+    releaseall
+}
+
+script Liam_SecretBaseLab_Computer2 {
+    lockall
+    msgbox(
+"Pretty sure my brain is going to melt
+from all of this data analysis. At least
+it beats working in lab 3 I guess..."
+    )
+    releaseall
+}
+
+script Liam_SecretBaseLab_Computer3 {
+    lockall
+    msgbox(
+"Message came in today from the boss.
+It sounds like things are getting
+dicey in Kanto, we need to hurry
+this up and find Mew soon..."
+    )
+    releaseall
+}
+
+script Liam_SecretBaseLab_Computer4 {
+    lockall
+    msgbox(
+"Past intelligence from Kanto reports
+that Mew exhibits an unual interest in
+trucks. I think whoever wrote the
+report must have been sleep deprived or
+something. That just can't be right..."
+    )
+    releaseall
+}
+
+script Liam_SecretBaseLab_Computer5 {
+    lockall
+    msgbox(
+"Ugh, I have to visit lab 3 this week!?!?
+A guy can only take so much sand! It
+gets EVERYWHERE!"
+    )
+    releaseall
+}
+
+script Liam_SecretBaseLab_Computer6 {
+    lockall
+    msgbox(
+"Bro I do not get paid enough to comute
+this far, usually in the rain, up a
+frickin waterfall, just to sit on a leaf
+with a laptop. Ugh..."
+    )
+    releaseall
+}

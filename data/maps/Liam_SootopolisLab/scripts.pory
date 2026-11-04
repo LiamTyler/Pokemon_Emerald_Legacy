@@ -1,0 +1,56 @@
+mapscripts Liam_SootopolisLab_MapScripts {
+}
+
+script Liam_SootopolisLab_EquipmentSign {
+    lockall
+    msgbox("The machines appear to be measuring\nsomething from the cave below...")
+    releaseall
+}
+
+script Liam_SootopolisLab_BrokenComputer {
+    lockall
+    msgbox("This comuter appears to be broken...")
+    releaseall
+}
+
+script Liam_SootopolisLab_ComputerSign {
+    lockall
+    callnative(CheckPartyForPorygon)
+    if (var(VAR_0x8004) != 1)
+    {
+        msgbox(
+"A working computer! However, it appears
+to be encryped. If only there was
+someone good with computers..."
+        )
+    }
+    else
+    {
+        playmoncry(SPECIES_PORYGON, CRY_MODE_NORMAL)
+        waitmoncry
+        msgbox(
+"Porygon hacked into the computer! This
+appears to be an old Team Rocket
+secret lab! They must have expanded
+further than anyone predicted...
+
+The files on this computer look to be
+related to various legendaries,
+particularly Mew. It looks like they
+were trying to capture Mew for some
+sort of secret project? Can't tell...
+
+They were analyzing the Cave of Origin
+below to see if the energies
+emitted there could be used to
+track down Mew. It's unclear if they
+found him, but there is mention of
+another secret lab in Hoenn! I don't
+see any explicit directions, but there
+are mentions of 'lots of trees' and
+'a waterfall'."
+        )
+    }
+    releaseall
+    //
+}

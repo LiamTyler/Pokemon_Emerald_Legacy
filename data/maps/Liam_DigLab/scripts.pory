@@ -1,13 +1,77 @@
 mapscripts Liam_DigLab_MapScripts {
 }
 
-script Liam_DigLab_WarpOut {
-    warp(MAP_ROUTE106, 48, 17)
-    waitstate
+// script Liam_DigLab_WarpOut {
+//     warp(MAP_ROUTE106, 48, 17)
+//     waitstate
+// }
+
+script Liam_DigLab_SignBackground {
+    lockall
+    msgbox("The computer appears to be running\nsome sort of analysis.")
+    releaseall
 }
 
 script Liam_DigLab_Sign1 {
     lockall
-    msgbox("Hello Bwee")
+    msgbox(
+"We're so close to finding Mew, I can
+feel it! We're getting an emergency
+signal from Kanto though, things must
+be going really poorly there, we need to
+return immediately, despite our
+progress."
+    )
+    releaseall
+}
+
+raw `
+Liam_DigLab_Braille1::
+    brailleformat 0, 0, 0, 0, 0, 0
+    .braille "I LOVE$"
+`
+
+script Liam_DigLab_Sign2 {
+    lockall
+    msgbox(
+"We found some strange symbols from
+ancient ruins we believe Mew inhabited:"
+    )
+    closemessage
+    braillemsgbox(Liam_DigLab_Braille1)
+    closemessage
+    msgbox(
+"If only we had more time to analyze!"
+    )
+    releaseall
+    end
+}
+
+raw `
+Liam_DigLab_Braille2::
+    brailleformat 0, 0, 0, 0, 0, 0
+    .braille "FORESTS$"
+`
+
+script Liam_DigLab_Sign3 {
+    lockall
+    msgbox(
+"This was the second half of the symbols
+from the ruins we found, I just can't
+make heads or tails of it yet..."
+    )
+    closemessage
+    braillemsgbox(Liam_DigLab_Braille2)
+    releaseall
+    end
+}
+
+script Liam_DigLab_Sign4 {
+    lockall
+    msgbox(
+"Bruh why do we keep making our bases in
+the sand, I really doubt Mew was going
+to be chillin here..."
+    )
     releaseall
 }

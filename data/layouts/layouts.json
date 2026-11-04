@@ -4440,6 +4440,36 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/Liam_DigLab/border.bin",
       "blockdata_filepath": "data/layouts/Liam_DigLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIAM_SOOTOPOLIS_LAB",
+      "name": "Liam_SootopolisLab_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Liam_SootopolisLab/border.bin",
+      "blockdata_filepath": "data/layouts/Liam_SootopolisLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIAM_SECRET_BASE_LAB",
+      "name": "Liam_SecretBaseLab_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_SecretBase",
+      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "border_filepath": "data/layouts/Liam_SecretBaseLab/border.bin",
+      "blockdata_filepath": "data/layouts/Liam_SecretBaseLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIAM_DESERT_LAB",
+      "name": "Liam_DesertLab_Layout",
+      "width": 16,
+      "height": 16,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/Liam_DesertLab/border.bin",
+      "blockdata_filepath": "data/layouts/Liam_DesertLab/map.bin"
     }
   ]
 }

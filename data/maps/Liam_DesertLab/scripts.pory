@@ -1,0 +1,67 @@
+mapscripts Liam_DesertLab_MapScripts {
+}
+
+script Liam_DesertLab_Sign1 {
+    lockall
+    msgbox(
+"The signal is stronger here than it was
+on route 119. There appears to be some
+interference due to the proximity of
+Regirock, however, so we are unable to
+get the best reading yet..."
+    )
+    releaseall
+}
+
+script Liam_DesertLab_Sign2 {
+    lockall
+    msgbox(
+"Things are really going poorly in Kanto.
+I think it's likely we will have to
+give up this hunt for Mew soon and
+return to help at home..."
+    )
+    releaseall
+}
+
+script Liam_DesertLab_Sign3 {
+    lockall
+    msgbox(
+"Jack was complaining so much about the
+commute to the route 119 outpost, but
+he's delusional. Come trade spots with
+me Jack, I'm happy to trade..."
+    )
+    releaseall
+}
+
+script Liam_DesertLab_Sign4 {
+    lockall
+    msgbox(
+"I'm flying to the latest outpost
+tomorrow. Still sandy getting in, but
+it can't be as bad as this place.
+
+4E
+21N
+37W
+4S
+T28"
+    )
+    releaseall
+}
+
+script Liam_DesertLab_Sign5 {
+    lockall
+    msgbox(
+"The Sootopolis lab made sense to be
+near the Cave of Origin to study that
+energy, but why the hell are we here?
+Do we seriously think Mew wants to chill
+in a sandstorm or dark cave of all
+places? Sure we can scan for psychic
+energy readings, but shouldn't we be
+looking in the exact opposite place?"
+    )
+    releaseall
+}

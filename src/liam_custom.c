@@ -7,6 +7,24 @@
 #include "overworld.h"
 #include "constants/maps.h"
 #include "field_screen_effect.h"
+#include "constants/species.h"
+
+void CheckPartyForPorygon(void)
+{
+    u8 i;
+
+    gSpecialVar_0x8004 = 0;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES)
+            == SPECIES_PORYGON)
+        {
+            gSpecialVar_0x8004 = 1;
+            return;
+        }
+    }
+}
 
 bool8 Liam_ShouldDigToLab(void)
 {

@@ -1276,7 +1276,7 @@
 #define FLAG_SHOW_HIDDEN_POWER                                      0x4D0
 #define FLAG_HIDE_TRUCK_MEW                                         0x4D1 // Previously Unused Flag
 #define FLAG_TRUCK_MEW_INITIALIZED                                  0x4D2 // Previously Unused Flag
-#define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
+#define FLAG_LIAM_SOOTOPOLIS_RARE_CANDY                             0x4D3 // Previously Unused Flag
 #define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
 #define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
 #define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag

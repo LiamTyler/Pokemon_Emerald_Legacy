@@ -1073,3 +1073,9 @@ Common_EventScript_LegendaryRanAway::
 	.include "data/maps/TheEnd/scripts.inc"
 
 	.include "data/maps/Liam_DigLab/scripts.inc"
+
+	.include "data/maps/Liam_SootopolisLab/scripts.inc"
+
+	.include "data/maps/Liam_SecretBaseLab/scripts.inc"
+
+	.include "data/maps/Liam_DesertLab/scripts.inc"

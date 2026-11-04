@@ -612,6 +612,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE119_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_LIAM_SECRET_BASE_LAB",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -890,13 +897,6 @@
       "y": 76,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE4_3"
-    },
-    {
-      "type": "secret_base",
-      "x": 4,
-      "y": 15,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_SHRUB3_3"
     },
     {
       "type": "secret_base",
