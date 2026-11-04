@@ -47,7 +47,7 @@ Liam_DesertLab_Sign5::
 	lockall
 # 56 "data/maps/Liam_DesertLab/scripts.pory"
 	msgbox Liam_DesertLab_Sign5_Text_0
-# 66 "data/maps/Liam_DesertLab/scripts.pory"
+# 68 "data/maps/Liam_DesertLab/scripts.pory"
 	releaseall
 	return
 
@@ -87,11 +87,13 @@ Liam_DesertLab_Sign4_Text_0:
 
 Liam_DesertLab_Sign5_Text_0:
 # 57 "data/maps/Liam_DesertLab/scripts.pory"
-	.string "The Sootopolis lab made sense to be\n"
-	.string "near the Cave of Origin to study that\l"
-	.string "energy, but why the hell are we here?\l"
-	.string "Do we seriously think Mew wants to chill\l"
-	.string "in a sandstorm or dark cave of all\l"
-	.string "places? Sure we can scan for psychic\l"
-	.string "energy readings, but shouldn't we be\l"
-	.string "looking in the exact opposite place?$"
+	.string "Having a lab in Sootopolis made sense\n"
+	.string "to be near the Cave of Origin, so that\l"
+	.string "we could study that energy, but why\l"
+	.string "the hell did we setup a lab here in\l"
+	.string "the desert? Do we seriously think Mew\l"
+	.string "wants to chill in a sandstorm, or in a\l"
+	.string "dark cave of all places? Sure, we can\l"
+	.string "scan for psychic energy readings, but\l"
+	.string "shouldn't we be looking somewhere\l"
+	.string "nicer?$"

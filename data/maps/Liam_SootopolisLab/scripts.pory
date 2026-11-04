@@ -9,7 +9,10 @@ script Liam_SootopolisLab_EquipmentSign {
 
 script Liam_SootopolisLab_BrokenComputer {
     lockall
-    msgbox("This comuter appears to be broken...")
+    msgbox(
+"This computer appears to be recently
+wiped clean, as if someone was trying to
+hide something...")
     releaseall
 }
 

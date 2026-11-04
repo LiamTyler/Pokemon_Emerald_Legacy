@@ -54,14 +54,16 @@ T28"
 script Liam_DesertLab_Sign5 {
     lockall
     msgbox(
-"The Sootopolis lab made sense to be
-near the Cave of Origin to study that
-energy, but why the hell are we here?
-Do we seriously think Mew wants to chill
-in a sandstorm or dark cave of all
-places? Sure we can scan for psychic
-energy readings, but shouldn't we be
-looking in the exact opposite place?"
+"Having a lab in Sootopolis made sense
+to be near the Cave of Origin, so that
+we could study that energy, but why
+the hell did we setup a lab here in
+the desert? Do we seriously think Mew
+wants to chill in a sandstorm, or in a
+dark cave of all places? Sure, we can
+scan for psychic energy readings, but
+shouldn't we be looking somewhere
+nicer?"
     )
     releaseall
 }
